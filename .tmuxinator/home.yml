@@ -1,0 +1,10 @@
+name: home
+root: ~/
+attach: false # leaving attach off since I'll just use tmuxinator for starting sessions
+
+windows:
+  - tasks: taskwarrior-tui
+  - dotfiles:
+      root: ~/projects/gitlab/tommy.morgan/dotfiles/
+      panes:
+        - nvim

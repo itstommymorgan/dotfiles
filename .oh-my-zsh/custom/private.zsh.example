@@ -1,0 +1,5 @@
+# copy this to private.zsh and make changes, as it's in .gitignore and you won't
+# leak secrets.
+
+export GH_ENTERPRISE_DOMAIN = "https://this.is.a.gh.enterprise.url.com"
+export GITLAB_ACCESS_TOKEN = "likeIwouldPasteThisHere"

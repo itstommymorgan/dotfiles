@@ -1,0 +1,106 @@
+*tm-custom*   My custom help file.
+
+==============================================================================
+CUSTOM SHORTCUTS                                           *tm-custom-shortcuts*
+
+`<Leader>` is the space bar (<Space>).
+`<Leader><Leader>` - `:`. Substitute for shift-;
+
+`<Leader>b` - go back to the previous buffer
+
+`<Leader>d` - prefix for commands related to debugging
+`<Leader>db` - toggle breakpoint
+`<Leader>dc` - "continue"
+`<Leader>dr` - open the REPL
+`<Leader>ds` - "step"
+
+`<Leader>f` - prefix for commands related to finding things (Telescope)
+  `<Leader>ff` - find a file
+  `<Leader>fg` - Live Grep
+  `<Leader>fh` - find a helptag
+  `<Leader>fm` - find maps
+  `<Leader>ft` - find tags
+
+`<Leader>g` - prefix for commands related to git.
+  `<Leader>gb` - open Git blame.
+  `<Leader>gd` - open Git diff.
+  `<Leader>gl` - open the Git log.
+  `<Leader>go` - run Fugitive's "browse" command.
+  `<Leader>gp` - run git push (asynchronously in a scratch FTerm).
+  `<Leader>gs` - show the git status window.
+  `<Leader>gu` - run git up (asynchronously in a scratch FTerm).
+
+`<Leader>h` - navs windows left
+`<Leader>H` - moves current window left
+`<Leader>i` - toggle display of hidden characters
+`<Leader>j` - navs windows down
+`<Leader>J` - moves current window down
+`<Leader>k` - navs windows up
+`<Leader>K` - moves current window up
+`<Leader>l` - navs windows right
+`<Leader>L` - moves current window right
+
+`<Leader>q` - quits the current window
+`<Leader>Q` - quits all windows
+
+`<Leader>s` - create a vertical split
+`<Leader>S` - create a horizontal split
+
+`<Leader>t` - toggle FTerm
+
+`<Leader>V` - reload vim config
+
+`<Leader>w` - writes the current buffer to disk
+
+`<Leader>x` - general extension prefix.
+  `<Leader>xs` - prefix for saving/loading sessions.
+  `<Leader>xss` - save the current session.
+  `<Leader>xsl` - load the last saved session.
+
+`<Leader>y` - general yabs prefix.
+  `<Leader>ys` - run specs for current file.
+  `<Leader>yS` - run specs at current line.
+  `<Leader>ya` - run all specs.
+
+`-` - toggle CHADtree.
+`H` - moves to beginning of line
+`J` - page down
+`K` - page up
+`L` - moves to end of line
+`Q` - repeats the last recorded macro
+`Y` - behaves like D, A, I, etc. in that it yanks to EOL
+
+
+`gcc` - comment the current line.
+`gc<motion>` - comment out the given motion.
+`gs*` - sort by motion/text object (e.g. gsip - sort inner paragraph).
+
+
+==============================================================================
+CUSTOM TEXT OBJECTS                                      *tm-custom-textobjects*
+
+Arguments in functions/lists/etc: (from vim-angry)
+`aa` / `ia` - an argument (with separator) or inner argument (without separator).
+
+Comments: (from vim-textobj-comment)
+`ac` / `ic` - select a comment / inner comment. 
+
+Indents: (from vim-textobj-indent)
+`ai` / `ii` - select an indent / inside an indent.
+
+Lines: (from vim-textobj-line)
+`al` / `il` - select all the characters in a line (without EOL). il doesn't select
+leading whitespace.
+
+Punctuation pairs: (from targets.vim)
+(This applies to quotes, brackets, etc. but I will only use `(` for examples)
+`an(` / `in(` - the _next_ () and its contents, or just its contents.
+
+==============================================================================
+TODO                                                            *tm-custom-todo*
+
+- Set up keybindings for forcing a tags refresh w/ gutentags
+
+
+
+vim:tw=78:et:ft=help:norl:

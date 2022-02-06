@@ -1,0 +1,15 @@
+import:
+  # load the dracula theme
+  - ~/.config/alacritty/dracula.yml
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+  size: 16.0
+
+shell:
+  program: /usr/local/bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach-session -t home"
