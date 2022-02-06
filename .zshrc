@@ -10,10 +10,10 @@ plugins=(asdf direnv git git-open rake-fast virtualenv vi-mode zsh-autosuggestio
 
 source $ZSH/oh-my-zsh.sh
 
+# inc homebrew binaries for arm64 macs
+export PATH="/opt/homebrew/bin:$PATH"
 # inc python user packages
 export PATH="$PATH:$HOME/Library/Python/3.8/bin"
-# inc rvm
-# export PATH="$PATH:$HOME/.rvm/bin"
 # inc local path
 export PATH="$PATH:$HOME/.local/bin"
 
