@@ -12,7 +12,7 @@
 	url = git@github.com:tmux-plugins/tmux-open.git
 [submodule ".tmux/plugins/tmux-plugin-sysstat"]
 	path = .tmux/plugins/tmux-plugin-sysstat
-	url = git@github.com:tmux-plugins/tmux-plugin-sysstat.git
+	url = git@github.com:samoshkin/tmux-plugin-sysstat.git
 [submodule ".tmux/plugins/tmux-prefix-highlight"]
 	path = .tmux/plugins/tmux-prefix-highlight
 	url = git@github.com:tmux-plugins/tmux-prefix-highlight.git
