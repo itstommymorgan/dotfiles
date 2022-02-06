@@ -13,6 +13,11 @@ export BAT_THEME="Dracula"
 # put homebrew binaries at front of PATH
 export PATH="${brew_root}/bin:$PATH"
 
+# load custom configurations
+for file in ~/.zsh/custom/*.zsh; do
+  source "$file"
+done
+
 # load plugins
 source $ZSH/plug.zsh
 
