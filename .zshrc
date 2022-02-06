@@ -1,4 +1,4 @@
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.zsh"
 
 # only wait 10ms for additional characters in a sequence.
 export KEYTIMEOUT=1
@@ -8,7 +8,7 @@ export BAT_THEME="Dracula"
 
 plugins=(asdf direnv git git-open rake-fast virtualenv vi-mode zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+source $ZSH/plug.zsh
 
 # inc homebrew binaries for arm64 macs
 export PATH="/opt/homebrew/bin:$PATH"
