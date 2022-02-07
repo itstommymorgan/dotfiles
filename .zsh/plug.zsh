@@ -12,6 +12,9 @@ zplug "greymd/docker-zsh-completion"
 # Blaaaaaah
 zplug "dracula/zsh", use:"dracula.zsh-theme"
 
+# Exa seems cool
+zplug "MohamedElashri/exa-zsh"
+
 # EMOJI
 zplug "pschmitt/emoji-fzf.zsh"
 
