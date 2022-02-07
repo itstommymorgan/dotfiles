@@ -1,7 +1,7 @@
 require('config')
 
 config.option('background', 'dark')
-vim.cmd('colorscheme dracula')
+vim.cmd('silent! colorscheme dracula')
 
 -- show matching brackets/etc
 config.option('showmatch', true)
