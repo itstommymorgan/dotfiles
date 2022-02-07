@@ -12,6 +12,8 @@ export BAT_THEME="Dracula"
 
 # put homebrew binaries at front of PATH
 export PATH="${brew_root}/bin:$PATH"
+# and add local python packages
+export PATH="$PATH:$HOME/Library/Python/3.8/bin"
 
 # load custom configurations
 for file in ~/.zsh/custom/*.zsh; do
