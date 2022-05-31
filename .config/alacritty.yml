@@ -12,4 +12,4 @@ shell:
   args:
     - -l
     - -c
-    - "tmux attach-session -t home"
+    - "tmux attach-session -t home || tmuxinator start home"
