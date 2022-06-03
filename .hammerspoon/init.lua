@@ -98,7 +98,7 @@ ext.utils.keybinder({
         app = "Google Chrome"
       },
       { key = "c", comment = "Calendar",
-        url = "https://calendar.google.com*"
+        app = "Vimcal"
       },
       { key = "i", comment = "IM-ish",
         map = {
