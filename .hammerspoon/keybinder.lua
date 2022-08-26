@@ -52,9 +52,6 @@ end
 function ext.utils.jump_to_meeting()
   if ext.utils.meetings.in_zoom_meeting then
     ext.app.forceLaunchOrFocus("zoom.us")()
-  elseif ext.utils.meetings.in_google_meet then
-    ext.app.forceLaunchOrOpenUrl("meet.google.com", "false")()
-  else
     ext.log:i("video call shortcut called but no call in progress.")
   end
 end

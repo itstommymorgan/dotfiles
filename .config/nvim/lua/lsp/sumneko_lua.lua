@@ -4,8 +4,9 @@ sumneko_lua.setup_opts = {
   settings = {
     Lua = {
       diagnostics = {
-        -- set vim and use to be recognized globals
-        globals = { 'vim', 'use' }
+        -- set hs, vim, and use to be recognized globals
+        -- vim and use for vim lua, hs for hammerspoon
+        globals = { 'hs', 'vim', 'use' }
       }
     }
   }

@@ -12,14 +12,11 @@ ext = {
   watchers = {}
 }
 
-if hs.fs.attributes("~/.config/hammerspoon.json") ~= nil then
-  ext.config = hs.json.read("~/.config/hammerspoon.json")
-else
-  ext.config = { meeting_checks = false,
-                 always_center_mouse = false,
-                 notes_reminders = false
-               }
+if hs.fs.attributes("~/.config/hammerspoon.json") == nil then
+  hs.execute("cp ~/.hammerspoon/hammerspoon.json.defaults ~/.config/hammerspoon.json")
 end
+
+ext.config = hs.json.read("~/.config/hammerspoon.json")
 
 -- Reload config automatically
 hs.loadSpoon("ReloadConfiguration"):start()
@@ -50,10 +47,6 @@ my_grid = require "my_grid"
 
 if ext.config.meeting_checks then
   require "meeting_checks"
-end
-
-if ext.config.notes_reminders then
-  require "notes_reminders"
 end
 
 if #hs.screen.allScreens() > 1 then
