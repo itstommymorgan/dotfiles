@@ -19,7 +19,7 @@ fugitive_bind('l', ':Git log<CR>')
 fugitive_bind('o', ':GBrowse<CR>')
 
 -- <chord>p for push
-fugitive_bind('p', ':lua __gitterm:run("git push")<CR>')
+fugitive_bind('p', ':lua __gitterm:run("gp")<CR>')
 
 -- <chord>s for status
 fugitive_bind('s', ':Git<CR>')
