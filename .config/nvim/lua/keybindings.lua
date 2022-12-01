@@ -48,10 +48,10 @@ config.map('L', '$', { noremap = false })
 -- use <Leader>i to toggle display of hidden characters
 config.map('<Leader>i', ':set list!<CR>')
 
--- Hit escape twice to clear highlights
-config.map('<Esc><Esc>', ':nohls<CR>', { silent = true })
-config.map('<C-@><C-@>', ':nohls<CR>', { silent = true })
-config.map('<C-Space><C-Space>', ':nohls<CR>', { silent = true })
+-- Hit escape twice to clear highlights (normal only)
+config.nmap('<Esc><Esc>', ':nohls<CR>', { silent = true })
+config.nmap('<C-@><C-@>', ':nohls<CR>', { silent = true })
+config.nmap('<C-Space><C-Space>', ':nohls<CR>', { silent = true })
 
 --  keep search results in the center of the screen
 local search_keys = {'n', 'N', '*', '#', 'g*', 'g#'}
