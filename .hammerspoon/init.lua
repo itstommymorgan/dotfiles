@@ -52,17 +52,32 @@ end
 if #hs.screen.allScreens() > 1 then
   require "windowpaner"
   ext.utils.windowpaner({
-    { app = "Obsidian", screen = 3, fullScreen = true },
-    { app = "Marvin", screen = 3, fullScreen = false },
-    { app = "Slack", screen = 2, fullScreen = true },
+    { app = "Lunatask", screen = 2, fullScreen = true },
+    { app = "Obsidian", screen = 2, fullScreen = true },
     { app = "Postbox", screen = 2, fullScreen = true },
-    { app = "Spotify", screen = 2, fullScreen = true }
+    { app = "Slack", screen = 2, fullScreen = true },
+    { app = "Spotify", screen = 2, fullScreen = true },
+    { app = "Vimcal", screen = 2, fullScreen = true },
   })
 end
 
 require "keybinder"
 
 ext.utils.keybinder({
+  { key = "1", comment = "Screen 1",
+    fun = function()
+      local displays = hs.screen.allScreens()
+      local win = hs.window.focusedWindow()
+      win:moveToScreen(displays[1], false, true)
+    end
+  },
+  { key = "2", comment = "Screen 2",
+    fun = function()
+      local displays = hs.screen.allScreens()
+      local win = hs.window.focusedWindow()
+      win:moveToScreen(displays[2], false, true)
+    end
+  },
   { key = "a", comment = "Alfred...",
     map = {
       { key = "1", comment = "1password bookmark...",
