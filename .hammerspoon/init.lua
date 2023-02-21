@@ -25,7 +25,7 @@ hs.loadSpoon("ReloadConfiguration"):start()
 hs.loadSpoon("MicMute"):bindHotkeys({ toggle = {ext.hyper, "space"}})
 
 -- caffeinate
-amphetamine = require "amphetamine"
+require "amphetamine"
 
 -- force *hold* of Cmd-Q to close apps
 require "slowq"
@@ -43,7 +43,7 @@ require "launch_or_focus"
 require "chrome_tab_automation"
 
 -- window grid
-my_grid = require "my_grid"
+require "my_grid"
 
 if ext.config.meeting_checks then
   require "meeting_checks"
