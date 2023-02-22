@@ -9,7 +9,7 @@ return {
   window_decorations = 'RESIZE',
   window_frame = {
     font = wezterm.font { family = 'FiraCode Nerd Font', weight = 'Bold'},
-    font_size = 13,
+    font_size = 18,
   },
   window_padding = {
     left = 0,
