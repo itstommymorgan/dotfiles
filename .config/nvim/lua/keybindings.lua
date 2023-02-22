@@ -59,3 +59,9 @@ for count = 1, #search_keys do
   key = search_keys[count]
   config.nmap(key, key .. 'zz', { silent = true, noremap = false })
 end
+
+require 'keybindings.dashboard'
+require 'keybindings.fterm'
+require 'keybindings.fugitive'
+require 'keybindings.telescope'
+require 'keybindings.trouble'

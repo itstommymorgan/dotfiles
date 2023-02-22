@@ -2,7 +2,7 @@
 require('draw_some_circles')
 
 --then, draw the rest of the owl
-require('plugins')
+require('plugin_manager')
 require('display')
 require('editing')
 require('keybindings')

@@ -46,3 +46,7 @@ vim.cmd [[augroup SimultaneousEdits
   autocmd!
   autocmd SwapExists * :let v:swapchoice = 'e'
 augroup END]]
+
+-- use gui termcolors (for CHADTree, mostly)
+config.option('termguicolors', true)
+

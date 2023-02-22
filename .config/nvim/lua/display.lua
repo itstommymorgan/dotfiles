@@ -14,9 +14,6 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 ]])
 
--- use gui termcolors (for CHADTree, mostly)
-config.option('termguicolors', true)
-
 -- always show at least 7 lines around the cursor
 config.option('scrolloff', 7)
 

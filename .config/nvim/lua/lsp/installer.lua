@@ -22,10 +22,10 @@ setup_opts.flags = {
 }
 
 -- make sure cmp gets the capabilities added.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 setup_opts.capabilities = capabilities
 
-local servers = {'yamlls', 'tsserver', 'sumneko_lua', 'dockerls', 'bashls', 'cssls', 'eslint', 'terraformls' }
+local servers = {'yamlls', 'tsserver', 'lua_lsp', 'dockerls', 'bashls', 'cssls', 'eslint', 'terraformls' }
 
 local function isModuleAvailable(name)
   if package.loaded[name] then
