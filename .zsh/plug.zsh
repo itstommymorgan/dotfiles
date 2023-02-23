@@ -1,5 +1,3 @@
-source $(brew --prefix)/opt/zplug/init.zsh
-
 # completion and some niceties for AWS CLI
 zplug "eastokes/aws-plugin-zsh"
 
