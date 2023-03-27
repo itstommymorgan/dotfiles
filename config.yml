@@ -1,0 +1,28 @@
+---
+# Configuration for the dotfiles ansible role that I use for setting up my
+# macbook. For more detail, see https://github.com/itstommymorgan/my_macbook
+
+dotfiles_repo: git@github.com:itstommymorgan/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/projects/itstommymorgan/dotfiles
+dotfiles_repo_version: main
+dotfiles_files:
+  - .config/enhance-rails-intellisense-in-solargraph
+  - .config/git
+  - .config/karabiner
+  - .config/nvim
+  - .config/wezterm
+  - .gnupg/gpg.conf
+  - .gnupg/gpg-agent.conf
+  - .hammerspoon
+  - .oh-my-zsh
+  - .tmux
+  - .tmuxinator
+  - .zsh
+  - .gvimrc
+  - .rubocop.yml
+  - .tmux
+  - .tmux.conf
+  - .tmuxinator
+  - .zsh
+  - .zshrc
