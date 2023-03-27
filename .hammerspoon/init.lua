@@ -49,17 +49,15 @@ if ext.config.meeting_checks then
   require "meeting_checks"
 end
 
-if #hs.screen.allScreens() > 1 then
-  require "windowpaner"
-  ext.utils.windowpaner({
-    { app = "Lunatask", screen = 2, fullScreen = true },
-    { app = "Obsidian", screen = 2, fullScreen = true },
-    { app = "Postbox", screen = 2, fullScreen = true },
-    { app = "Slack", screen = 2, fullScreen = true },
-    { app = "Spotify", screen = 2, fullScreen = true },
-    { app = "Vimcal", screen = 2, fullScreen = true },
-  })
-end
+ext.utils.windowpaner_config = {
+  { app = "Lunatask", screen = 2, fullScreen = true },
+  { app = "Mimestream", screen = 2, fullScreen = true },
+  { app = "Obsidian", screen = 2, fullScreen = true },
+  { app = "Slack", screen = 2, fullScreen = true },
+  { app = "Spotify", screen = 2, fullScreen = true },
+  { app = "Vimcal", screen = 2, fullScreen = true },
+}
+require "windowpaner"
 
 require "keybinder"
 
@@ -121,6 +119,9 @@ ext.utils.keybinder({
           }
         }
       },
+      { key = "m", comment = "Mail",
+        app = "Mimestream"
+      },
       { key = "n", comment = "Notion",
         app = "Notion"
       },
@@ -134,7 +135,7 @@ ext.utils.keybinder({
         toggle = "Spotify"
       },
       { key = "t", comment = "Terminal",
-        app = "Alacritty"
+        app = "Wezterm"
       },
       { key = "v", comment = "Video call",
         fun = ext.utils.jump_to_meeting
