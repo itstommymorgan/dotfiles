@@ -25,4 +25,5 @@ dotfiles_files:
   - .tmux.conf
   - .tmuxinator
   - .zsh
+  - .zshenv
   - .zshrc

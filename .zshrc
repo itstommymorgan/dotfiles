@@ -1,14 +1,7 @@
-export ZSH="$HOME/.zsh"
-
-export BREW_ROOT="/usr/local"
-if [[ `uname -m` == 'arm64' ]]; then
-  export BREW_ROOT="/opt/homebrew"
-fi
-
-eval $($BREW_ROOT/bin/brew shellenv)
-
-# put homebrew binaries at front of PATH
-export PATH="${BREW_ROOT}/bin:$PATH"
+# See .zshenv - this is always safe to directly call since it's only called in
+# .zshenv if the shell isn't interactive. This file is only loaded for
+# interactive shells.
+__tm_setup_homebrew
 
 source $(brew --prefix)/opt/zplug/init.zsh
 
@@ -27,4 +20,3 @@ done
 
 # load plugins
 source $ZSH/plug.zsh
-
