@@ -55,7 +55,6 @@ ext.utils.windowpaner_config = {
   { app = "Obsidian", screen = 2, fullScreen = true },
   { app = "Slack", screen = 2, fullScreen = true },
   { app = "Spotify", screen = 2, fullScreen = true },
-  { app = "Vimcal", screen = 2, fullScreen = true },
 }
 require "windowpaner"
 
@@ -102,9 +101,6 @@ ext.utils.keybinder({
       },
       { key = "b", comment = "Browser",
         app = "Google Chrome"
-      },
-      { key = "c", comment = "Calendar",
-        app = "Vimcal"
       },
       { key = "i", comment = "IM-ish",
         map = {
