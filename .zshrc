@@ -13,6 +13,8 @@ export KEYTIMEOUT=1
 
 export BAT_THEME="Dracula"
 
+export LC_ALL=en_US.UTF-8
+
 # load custom configurations
 for file in ~/.zsh/custom/*.zsh; do
   source "$file"
