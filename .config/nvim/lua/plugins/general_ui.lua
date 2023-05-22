@@ -136,5 +136,5 @@ return {
   {'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
 
    -- try to hide ansi escape codes
-  'vim-scripts/AnsiEsc.vim',
+  'powerman/vim-plugin-AnsiEsc',
 }

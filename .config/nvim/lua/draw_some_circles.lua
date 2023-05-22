@@ -50,3 +50,5 @@ augroup END]]
 -- use gui termcolors (for CHADTree, mostly)
 config.option('termguicolors', true)
 
+-- disable cecutil's keybindings since they overlap with some of mine
+vim.g.no_cecutil_maps = '1'

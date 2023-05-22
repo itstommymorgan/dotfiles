@@ -18,11 +18,6 @@ for count = 1, #keys do
   config.map('<Leader>' .. key, '<C-W>' .. key)
 end
 
--- this is SO DUMB but I have to map these to avoid them overriding my own
--- maps... thanks cecutil
-config.map('<Leader><bang>swp', '<Plug>SaveWinPosn')
-config.map('<Leader><bang>rwp', '<Plug>RestoreWinPosn')
-
 -- use <Leader>s for vertical split, <Leader>S for horizontal split
 config.map('<Leader>s', ':vs<CR><C-W>l')
 config.map('<Leader>S', ':sp<CR><C-W>j')
