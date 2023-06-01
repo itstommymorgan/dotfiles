@@ -50,57 +50,24 @@ if ext.config.meeting_checks then
 end
 
 ext.utils.windowpaner_config = {
-  { app = "Lunatask", screen = 2, fullScreen = true },
   { app = "Mimestream", screen = 2, fullScreen = true },
-  { app = "Obsidian", screen = 2, fullScreen = true },
+  { app = "Obsidian", screen = 1, fullScreen = false },
   { app = "Slack", screen = 2, fullScreen = true },
   { app = "Spotify", screen = 2, fullScreen = true },
+  { app = "Todoist", screen = 3, fullScreen = true },
 }
 require "windowpaner"
 
 require "keybinder"
 
 ext.utils.keybinder({
-  { key = "1", comment = "Screen 1",
-    fun = function()
-      local displays = hs.screen.allScreens()
-      local win = hs.window.focusedWindow()
-      win:moveToScreen(displays[1], false, true)
-    end
-  },
-  { key = "2", comment = "Screen 2",
-    fun = function()
-      local displays = hs.screen.allScreens()
-      local win = hs.window.focusedWindow()
-      win:moveToScreen(displays[2], false, true)
-    end
-  },
-  { key = "a", comment = "Alfred...",
-    map = {
-      { key = "1", comment = "1password bookmark...",
-        fun = function()
-          hs.execute('osascript -e \'tell application "Alfred 4" to search "1p "\'')
-        end
-      },
-      { key = "b", comment = "Bookmark Search...",
-        fun = function()
-          hs.execute('osascript -e \'tell application "Alfred 4" to search "bm "\'')
-        end
-      },
-      { key = "c", comment = "Clipboard History",
-        fun = function()
-         hs.eventtap.keyStroke({"option", "command"}, "c")
-       end
-     },
-    }
-  },
   { key = "g", comment = "Go...",
     map = {
-      { key = "a", comment = "mArvin",
-        app = "Marvin"
-      },
       { key = "b", comment = "Browser",
         app = "Google Chrome"
+      },
+      { key = "d", comment = "ToDoist",
+        app = "Todoist"
       },
       { key = "i", comment = "IM-ish",
         map = {
@@ -117,9 +84,6 @@ ext.utils.keybinder({
       },
       { key = "m", comment = "Mail",
         app = "Mimestream"
-      },
-      { key = "n", comment = "Notion",
-        app = "Notion"
       },
       { key = "o", comment = "Obsidian",
         toggle = "Obsidian"
@@ -196,6 +160,27 @@ ext.utils.keybinder({
   {
     key = "w", comment = "Window...",
     map = {
+      { key = "1", comment = "Move to Screen 1",
+        fun = function()
+          local displays = hs.screen.allScreens()
+          local win = hs.window.focusedWindow()
+          win:moveToScreen(displays[1], false, true)
+        end
+      },
+      { key = "2", comment = "Move to Screen 2",
+        fun = function()
+          local displays = hs.screen.allScreens()
+          local win = hs.window.focusedWindow()
+          win:moveToScreen(displays[2], false, true)
+        end
+      },
+      { key = "3", comment = "Move to Screen 3",
+        fun = function()
+          local displays = hs.screen.allScreens()
+          local win = hs.window.focusedWindow()
+          win:moveToScreen(displays[3], false, true)
+        end
+      },
       { key = "h", comment = "Left",
         fun = function()
           my_grid.moveWindowToPosition(my_grid.screenPositions.left)
