@@ -31,9 +31,6 @@ zplug "rbirnie/oh-my-zsh-keybase"
 # Completions for 1password commandline
 zplug "sirhc/op.plugin.zsh"
 
-# Add rails aliases/commands
-zplug "paraqles/zsh-plugin-rails"
-
 # Enable faster parsing for `rake` commands
 zplug "unixorn/rake-completion.zshplugin"
 
