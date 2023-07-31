@@ -1,3 +1,4 @@
 .oh-my-zsh/custom/private.zsh
 .config/nvim/plugin/**
 .config/hammerspoon.json
+.config/nvim/lazy-lock.json
