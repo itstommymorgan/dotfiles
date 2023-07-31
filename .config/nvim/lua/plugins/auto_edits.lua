@@ -10,12 +10,4 @@ return {
   -- Automatically add 'end' statements as appropriate
   'tpope/vim-endwise',
 
-  -- ruby auto-formatter
-  {
-    'ruby-formatter/rufo-vim',
-    config = function()
-      vim.g.rufo_auto_formatting = 1
-    end,
-  },
-
 }
